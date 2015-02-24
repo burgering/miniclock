@@ -61,12 +61,13 @@ public class MainActivity extends Activity {
 	/* 响铃 */
 	public void alarm_on(){
 		Log.i("提示：", "xxx ALARM...ON.");
+		mMediaPlayer.seekTo(0);
 		mMediaPlayer.start();
 	}
 	/* 停止 */
 	public void alarm_off(){
 		Log.i("提示：", "xxx ALARM...OFF.");
-		mMediaPlayer.stop();
+		mMediaPlayer.pause();
 	}
     @Override
     protected void onCreate(Bundle savedInstanceState) {
